@@ -46,7 +46,6 @@ MERN Stack Group Expense Splitting Application
 </ul>
 </li>
 <li><a href="#configuration-and-setup">Configuration and Setup</a></li>
-<li><a href="#license">License</a></li>
 </ul>
 <h2 id="key-features">Key Features</h2>
 <br/>
