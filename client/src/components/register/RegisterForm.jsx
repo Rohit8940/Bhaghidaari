@@ -39,6 +39,7 @@ export default function RegisterForm() {
     onSubmit: async (values) => {
       //User Register Service call - Upon success user is redirected to dashboard 
       //Register fail snackbar displays error
+      console.log("submitting values",values);
       await register(values, setShowAlert, setAlertMessage)
     },
   });
