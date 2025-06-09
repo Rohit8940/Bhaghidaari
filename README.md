@@ -10,14 +10,14 @@
   <p align="center">
     Build with the MERN stack (MongoDB, Express, React and NodeJS).
     <br />
-    <a href="https://github.com/rohit8940"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Rohit8940/Bhaghidaari"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="">View Demo</a>
     ·
-    <a href="https://github.com/rohit8940">Report Bug</a>
+    <a href="https://github.com/Rohit8940/Bhaghidaari/issues">Report Bug</a>
     ·
-    <a href="https://github.com/rohit8940">Request Feature</a>
+    <a href="https://github.com/Rohit8940/Bhaghidaari/pulls">Request Feature</a>
   </p>
 </div>
 
@@ -34,7 +34,7 @@
 
 
 ## Introduction
-A full stack expense spliting app made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed to split group expense between friends. With this application, you can add your expense details and get an whole expense analytics feature - Group Balance, Monthly amount spend, Catagory wise expense spending graph etc... Jump right off the [Live App]() and start adding your expenses or download the entire [Source code](https://github.com/rohit8940) and run it on your server.
+A full stack expense spliting app made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed to split group expense between friends. With this application, you can add your expense details and get an whole expense analytics feature - Group Balance, Monthly amount spend, Catagory wise expense spending graph etc... Jump right off the [Live App](https://bhaghidaari.vercel.app/) and start adding your expenses or download the entire [Source code](https://github.com/Rohit8940/Bhaghidaari) and run it on your server.
 
 
 

@@ -25,9 +25,9 @@ const About = () => {
     <br/>
     <Copyright/>
     <br/>
-    <a href="https://github.com/rohit8940">Report Bug</a>
+    <a href="https://github.com/rohit8940/Bhaghidaari/issues">Report Bug</a>
     &nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/rohit8940">Request Feature</a>
+    <a href="https://github.com/rohit8940/Bhaghidaari/pull">Request Feature</a>
   </p>
 </div>
 <br/>

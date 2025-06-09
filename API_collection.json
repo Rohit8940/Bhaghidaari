@@ -143,7 +143,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstName\" : \"Sunny\",\n    \"lastName\" : \"Dao\",\n    \"emailId\" : \"test-mail@gmail.com\",\n    \"password\" : \"TestPassword@123\"\n}",
+							"raw": "{\n    \"firstName\" : \"Rohit\",\n    \"lastName\" : \"Baruah\",\n    \"emailId\" : \"test-mail@gmail.com\",\n    \"password\" : \"TestPassword@123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -340,7 +340,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"62b6190ef9581a7a995205c7\",\n    \"groupName\": \"Molina Project\",\n    \"groupDescription\" : \"\",\n    \"currencyType\": \"USD\",\n    \"groupOwner\": \"s4sunnygeorge@gmail.com\",\n    \"groupMembers\": [\"test-mail@gmail.com\",\"s4sunnygeorge@gmail.com\", \"test-mail1@gmail.com\"]\n}",
+							"raw": "{\n    \"id\": \"62b6190ef9581a7a995205c7\",\n    \"groupName\": \"Molina Project\",\n    \"groupDescription\" : \"\",\n    \"currencyType\": \"USD\",\n    \"groupOwner\": \"s4@gmail.com\",\n    \"groupMembers\": [\"test-mail@gmail.com\",\"s4s@gmail.com\", \"test-mail1@gmail.com\"]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -380,7 +380,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"groupId\": \"62b5bc6cf9581a7a9952050f\",\n    \"expenseName\": \"Food\",\n    \"expenseDescription\": \"Fooding with Francis\",\n    \"expenseAmount\": 5000,\n    \"expenseOwner\": \"test-mail@gmail.com\",\n    \"expenseMembers\": [\"test-mail@gmail.com\",\"test-mail1@gmail.com\",\"s4sunnygeorge@gmail.com\"]\n\n}",
+							"raw": "{\n    \"groupId\": \"62b5bc6cf9581a7a9952050f\",\n    \"expenseName\": \"Food\",\n    \"expenseDescription\": \"Fooding with Francis\",\n    \"expenseAmount\": 5000,\n    \"expenseOwner\": \"test-mail@gmail.com\",\n    \"expenseMembers\": [\"test-mail@gmail.com\",\"test-mail1@gmail.com\",\"s4@gmail.com\"]\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -615,7 +615,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"user\": \"s4sunnygeorge@gmail.com\"\n}",
+							"raw": "{\n   \"user\": \"s4@gmail.com\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
