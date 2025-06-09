@@ -13,7 +13,7 @@
     <a href="https://github.com/Rohit8940/Bhaghidaari"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://bhaghidaari.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/Rohit8940/Bhaghidaari/issues">Report Bug</a>
     ·
