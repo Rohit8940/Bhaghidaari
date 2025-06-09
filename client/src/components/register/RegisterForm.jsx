@@ -36,7 +36,7 @@ export default function RegisterForm() {
       remember: true,
     },
     validationSchema: RegisterSchema,
-    onSubmit: async () => {
+    onSubmit: async (values) => {
       //User Register Service call - Upon success user is redirected to dashboard 
       //Register fail snackbar displays error
       await register(values, setShowAlert, setAlertMessage)
