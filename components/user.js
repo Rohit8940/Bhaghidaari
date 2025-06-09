@@ -14,42 +14,60 @@ API: /users/v1/register
 */
 exports.userReg = async (req, res) => {
     try {
-        //Checking email Id exist in DB
+        console.log('Register Request Body:', req.body);
+
+        // Checking email Id exist in DB
         const user = await model.User.findOne({
             emailId: req.body.emailId
-        })
-        //If email ID present in database thows error and retuen message
-        if (user) {
-            const err = new Error("Email Id already present please login!")
-            err.status = 400
-            throw err
-        } else {
-            //Accepts the inputs and create user model form req.body
-            var newUser = new model.User(req.body)
-            //Performing validations
-            if (validator.emailValidation(newUser.emailId) &&
-                validator.passwordValidation(newUser.password) &&
-                validator.notNull(newUser.firstName)) {
-                //Bcrypt password encription
-                const salt = await bcrypt.genSalt(10);
-                newUser.password = await bcrypt.hash(newUser.password, salt)
+        });
 
-                //storing user details in DB
-                var id = await model.User.create(newUser)
-                res.status(200).json({
-                    status: "Success",
-                    message: "User Registeration Success",
-                    userId: id.id
-                })
-            }
+        if (user) {
+            const err = new Error("Email Id already present, please login!");
+            err.status = 400;
+            throw err;
         }
+
+        // Performing validations
+        if (!validator.emailValidation(req.body.emailId)) {
+            throw new Error("Invalid email format.");
+        }
+        if (!validator.passwordValidation(req.body.password)) {
+            throw new Error("Password does not meet complexity requirements.");
+        }
+        if (!validator.notNull(req.body.firstName) || !validator.notNull(req.body.lastName)) {
+            throw new Error("First name and Last name cannot be empty.");
+        }
+
+        // Bcrypt password encryption
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(req.body.password, salt);
+
+        // Preparing user object to store
+        const userData = {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            emailId: req.body.emailId,
+            password: hashedPassword
+        };
+
+        // Storing user details in DB
+        const savedUser = await model.User.create(userData);
+
+        res.status(200).json({
+            status: "Success",
+            message: "User Registration Success",
+            userId: savedUser.id
+        });
+
     } catch (err) {
-        logger.error(`URL : ${req.originalUrl} | staus : ${err.status} | message: ${err.message}`)
+        console.error('Full error:', err);
+        logger.error(`URL : ${req.originalUrl} | status : ${err.status} | message: ${err.message}`);
         res.status(err.status || 500).json({
             message: err.message
-        })
+        });
     }
-}
+};
+
 
 /*
 User login function
