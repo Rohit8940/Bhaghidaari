@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="">
-    <img src="./client/src/images/SmallSquareLogoJpg.jpg" alt="Logo" width="80" height="80">
+    <img src="./client/public/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">Bhaghidaari</h2>
