@@ -33,8 +33,8 @@ mongoose.connect(process.env.MONGODB_URI)
         const group = await Group.create({
             groupName: 'Trip to Goa',
             groupDescription: 'A fun trip with friends',
-            groupOwner: users[0]._id,
-            groupMembers: [users[0]._id, users[1]._id],
+            groupOwner: "demo@Bhaghidaari.app",
+            groupMembers: ["demo@codesangam.app", "friend@codesangam.app"],
             groupCategory: 'Travel',
             groupTotal: 0,
             split: []
@@ -47,8 +47,8 @@ mongoose.connect(process.env.MONGODB_URI)
             expenseDescription: '2 nights stay at resort',
             expenseAmount: 4000,
             expenseCategory: 'Accommodation',
-            expenseOwner: users[0]._id,
-            expenseMembers: [users[0]._id, users[1]._id],
+            expenseOwner: "demo@Bhaghidaari.app",
+            expenseMembers: ["demo@codesangam.app", "friend@codesangam.app"],
             expensePerMember: 2000,
             expenseType: 'UPI'
         })
@@ -56,8 +56,8 @@ mongoose.connect(process.env.MONGODB_URI)
         // 6. Seed Settlement
         const settlement = await Settlement.create({
             groupId: group._id,
-            settleTo: users[0]._id,
-            settleFrom: users[1]._id,
+            settleTo: "demo@Bhaghidaari.app",
+            settleFrom: "friend@codesangam.app",
             settleDate: new Date().toISOString(),
             settleAmount: 2000
         })

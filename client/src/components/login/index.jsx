@@ -97,6 +97,9 @@ export default function Login() {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography>
+            <Typography sx={{ color: 'text.secondary', mb: 5 }}>
+              Email - admin@gmail.com <br/>
+              Password - admin1234</Typography>
 
             {/* <AuthSocial />*/}
 
